@@ -1,4 +1,3 @@
-JS
 fetch("https://pizza.kando-dev.eu/Pizza")
 .then((res) => res.json())
 .then((datas) => {
@@ -19,8 +18,3 @@ fetch("https://pizza.kando-dev.eu/Pizza")
 
 
 
-CSS
-#pizza-menu{
-    display: grid;
-    grid-template-columns; repeat(3,2);
-}

@@ -18,19 +18,7 @@ nav{
     border-radius: 100%;
 }
 
-#PizzaSteve {
-    width: 10%;
-    float: right;
-}
 
-#PizzaSteve:hover {
-    content: url('pizzaback.png');
-}
-
-#kinai{
-    width: 200px;
-    float: right;
-}
 
 #pizzazo1{
     background-color: burlywood;
@@ -46,4 +34,9 @@ nav{
  
 .zoom:hover {
     transform: scale(1.5);
+}
+
+#pizza-menu{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
 }
