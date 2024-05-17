@@ -1,9 +1,26 @@
-fetch("https://pizza.kando-dev.eu/Pizza").then(function (res){
-    return res.json();
-})
-.then(function (datas){
+JS
+fetch("https://pizza.kando-dev.eu/Pizza")
+.then((res) => res.json())
+.then((datas) => {
     console.log(datas);
-    for (const data of datas.data){
-        document.getElementById("content").innerHTML += data.last_name
+    let content = document.getElementById("pizza-menu");
+    for(const data of datas) {
+        content.innerHTML += `<div class="card" style="width: 18rem;">
+        <img src="${data.kepURL}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${data.name}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>`
     }
 })
+
+
+
+
+CSS
+#pizza-menu{
+    display: grid;
+    grid-template-columns; repeat(3,2);
+}

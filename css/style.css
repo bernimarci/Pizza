@@ -1,0 +1,36 @@
+body {
+    background-image: url('../kepek/Pizzahatter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blue;
+}
+
+.navbar-brand{
+    padding-right: 15px;
+    padding-left: 30px;
+}
+.navbar-brand img{
+    background-color: rgb(3, 200, 254);
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.nav-link{
+    background-color: rgb(3, 200, 254);
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-right: 15px;
+    border: 2px solid black;
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+ 
+.zoom:hover {
+    transform: scale(1.5);
+}
